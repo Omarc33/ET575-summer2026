@@ -28,7 +28,7 @@ int main(){
     m*=3; // m=m*3;
     cout<<"updated m ="<<m<<endl;
 
-    //modulud: find and return the remainder of a division
+    //modulus find and return the remainder of a division
     cout<<"Modulus, Remainder = "<<n%m<<endl;
     cout<<"n = "<<n<<endl;
     n%= m;
@@ -81,7 +81,7 @@ int main(){
      //remainder of character divided by 60(use assignment operator)
      character %= 60;
      //print result
-     cout<<"Remainder of character is: "<<int(character)<<endl;
+     cout<<"Remainder of character is: "<<int(character)<<endl;//kept getting symbols instead of integrs,had to fix <<character<<endl;
      //is number less than or equal to character?(use comparison operator)
      cout<<"Is number less than or equal to character?: "<<(number <= character)<<endl;
      
