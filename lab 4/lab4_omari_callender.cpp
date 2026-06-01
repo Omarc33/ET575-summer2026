@@ -80,7 +80,7 @@ int main(){
 
      //remainder of character divided by 60(use assignment operator)
      character %= 60;
-     //print result
+     //print numerical result
      cout<<"Remainder of character is: "<<int(character)<<endl;//kept getting symbols instead of integrs,had to fix <<character<<endl;
      //is number less than or equal to character?(use comparison operator)
      cout<<"Is number less than or equal to character?: "<<(number <= character)<<endl;
