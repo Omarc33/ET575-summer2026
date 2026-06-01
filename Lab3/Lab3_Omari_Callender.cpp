@@ -5,16 +5,16 @@ using namespace std;
 int main(){
     cout<<"\n----example 1: numerical variables----"<<endl;
     //int,short, or long data type omly takes the whole number
-    int number= 5.9;
+    int number = 5.9;
     cout<<"The number is = "<<number<<endl;
     //float or double data takes the number as it is, the whole number with the  decimal numbers.
     double number1= 3.1233456789;
-    float number2= 9.123456789;
+    float number2 = 9.123456789;
     cout<<"The double data type = "<<number1<<endl;
     cout<<"The float data type = "<<number2<<endl;
 
     cout<<"\n----example 2: constant variables----"<<endl;
-    number=23.65;
+    number =23.65;
     cout<<"The updated number = " <<number<<endl;
     //constant variables value CAN'T be changed
     const float EXP=2.718;
@@ -23,7 +23,7 @@ int main(){
     cout<<"\n----example 3: calculate the height of a falling object---"<<endl;
     //declare the variables
     const float GRAVITY =9.8;
-    float time=0,height=0;
+    float time =0,height=0;
 
     //collect the time
     cout<<"Enter the falling time: ";
@@ -39,8 +39,8 @@ int main(){
     cout<<"\n----example 4: calculate the circumference of a circle -----"<<endl;
     //formula circumference= 2*radius*pi
     //declare variable
-    const float PI= 3.14159;
-    float circumference =0, radius =0;
+    const float PI = 3.14159;
+    float circumference = 0, radius =0;
 
     //collect the radius
     cout<<"Enter the radius: ";
@@ -51,6 +51,31 @@ int main(){
 
     //print result 
     cout<<"The circumference is= "<<circumference<<endl;
+
+    cout<<"\n-----Exercise/Lab 3------"<<endl;
+
+    //declare constant variable
+    const float PI1 = 3.14159;
+
+    //declare variables
+    int radius1 = 0;
+    float area = 0,volume =0;
+
+    //collect the radius
+    cout<<"Enter the radius of the circle and sphere: ";
+    cin>>radius1;
+
+    //calculate the are of the circle
+
+    area = PI1*radius1*radius1;
+    
+    //calculate the volume of the sphere
+
+    volume = (4/3.0)*PI1*radius1*radius1*radius1;
+
+    //print the results
+    cout<<"The area of the circle is "<<area<<endl;
+    cout<<"The volume of the sphere is "<<volume<<endl;
 
     return 0;
 }
