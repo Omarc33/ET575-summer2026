@@ -126,7 +126,8 @@ int main(){
 
     //print resulting word
     cout<<"After removing two characters from the end: "<<new_word<<endl;
-
+    cout<<"\n-------------------------------"<<endl;
     
+
     return 0;
 }
