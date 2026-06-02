@@ -101,5 +101,32 @@ int main(){
     cout<<"The first index of the word ISLAND in the username is ="<<index_ISLAND<<endl;    
     cout<<"The index of letter r is =" <<index_r<<endl;
 
+    cout<<"\n-----Exercise/Lab 5-----"<<endl;
+    //declare string variable
+    string new_word;
+
+    //collect the word
+    cout<<"Type a word: ";
+    cin>>new_word;
+
+    //print the 4th character
+    cout<<"The 4th character is: "<<new_word[3]<<endl;
+
+    //find and print the length of the word
+    cout<<"The length of the word is: "<<new_word.length()<<" characters."<<endl;
+
+    //replace three characters from the second character
+    new_word.replace(1,3,"-- $ --");
+
+    //print resulting word
+    cout<<"After replacement: "<<new_word<<endl;
+
+    //remove two characters from the end of the message
+    new_word.erase(new_word.length()-2,2);
+
+    //print resulting word
+    cout<<"After removing two characters from the end: "<<new_word<<endl;
+
+    
     return 0;
 }
