@@ -80,9 +80,41 @@ int main(){
     }
     //print result
     cout<<"selected gender = " <<selectedgender<<endl;
-
-    cout<<"\n____Exercise/Lab 9____"<<endl;
-
     
+    cout<<"\n____Exercise/Lab 9____"<<endl;
+    
+    //declare variables
+    int number = 0;
+    char choice;
+
+    //collect number
+    cout<<"Enter a number: ";
+    cin>>number;
+
+    //collect selection
+    cout<<"Do you want to double the number?"<<endl;
+    cout<<"Y for Yes"<<endl;
+    cout<<"N for No"<<endl;
+    cin>>choice;
+
+    //switch-case statement
+    switch(choice)
+    {
+        case 'y': case 'Y':
+            number *= 2;
+            break;
+
+        case 'n': case 'N':
+            break;
+
+        default:
+            number = 0;
+            break;
+    }
+
+    //print result
+    cout<<"The number is set to "<<number<<endl;
+
+
     return 0;
 }
