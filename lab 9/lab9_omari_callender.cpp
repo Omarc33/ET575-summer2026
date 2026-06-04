@@ -83,7 +83,7 @@ int main(){
     
     cout<<"\n____Exercise/Lab 9____"<<endl;
     
-    //declare v
+    //declare variables
     int number = 0;
     char choice;
 
