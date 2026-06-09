@@ -152,6 +152,36 @@ int main(){
     else{
         cout<<"zero"<<endl;
     }
+
+    cout<<"\n-----Exercise/lab 7-----"<<endl;
+
+     //declare variables
+    float weight = 0, shippingcost = 0;
+
+    //collect the weight of the package
+    cout<<"Enter the weight of the package in pounds: ";
+    cin>>weight;
+
+    //check the shipping cost using multiway if else statement
+    if(weight > 0 && weight <= 2){
+        shippingcost = 5.00;
+    }
+    else if(weight > 2 && weight <= 5){
+        shippingcost = 8.20;
+    }
+    else if(weight > 5 && weight <= 10){
+        shippingcost = 10.25;
+    }
+    else if(weight > 10){
+        shippingcost = 12.50;
+    }
+    else{
+        shippingcost = 0;
+    }
+
+    //print result
+    cout<<"A package of weight "<<weight<<" costs $"<<shippingcost<<endl;
+
     return 0;
 
 
