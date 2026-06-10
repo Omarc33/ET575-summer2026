@@ -107,5 +107,54 @@ loop iteration | while (i>5) |i-- |if(i%2==0)| count += i| count -= 3
         6      |while (5>5)
                |false stop while loop
                 */
+
+
+cout<<"\n ---------------Excerise 1/Lab 11-----------"<<endl;
+
+int sum=0;
+int cot=0; //count is already used in this program
+
+for (int n = 20; n> 0; n-=2){ 
+
+        if (n%3 ==0){ 
+
+            cot++; 
+
+            continue; 
+
+        } 
+
+        sum += n; 
+
+ } 
+
+ cout<<"The sum is: "<<sum<<endl<<"The count is: "<<cot<<endl; 
+
+cout<<"\n------------------------------------------"<<endl;
+
+
+cout<<"\n-----------------Excerise 2/Lab 11----------"<<endl;
+int e=0, add=0; // i is already used in this program
+
+while(e<=10){ 
+
+    e++; 
+
+    if(e<5 && e !=2){    
+
+         cout<<"e = "<<e<<endl; 
+
+    } 
+
+    else{continue;} 
+
+        add +=e; 
+
+    } 
+
+cout<<"Add = "<<add<<endl; 
+
+
+
    return 0;
 }
