@@ -111,18 +111,24 @@ int main(){
     cout<<"\nExercise B: 10 by 10 graph"<<endl;
 
     int size = 10;
-
+    
     for(int row = 1; row <= size; row++){
-        for(int col = 1; col <= size; col++){
+    for(int col = 1; col <= size; col++){
 
-            if(row == col)
-                cout<<" x ";
-            else
-                cout<<" . ";
+        if( (row>=3 && row<=8 && col>=3 && col<=4) ||
+            (row>=3 && row<=8 && col>=7 && col<=8) ||
+            (row>=6 && row<=7 && col>=5 && col<=6) ||
+            (row>=8 && row<=10 && col>=5 && col<=6) )
+        {
+            cout<<" % ";
         }
-
-        cout<<endl;
+        else{
+            cout<<" . ";
+        }
     }
+
+    cout<<endl;
+}
 
     return 0;
 }
