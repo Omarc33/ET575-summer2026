@@ -3,7 +3,7 @@
 using namespace std;
 
 int main(){
-    int n =2,m=5;
+    int n =1,m=5;
     string reply;
     
     cout<<"\n What is happening: "<<endl;
@@ -21,6 +21,11 @@ int main(){
     string y= "james";
     cout<<"updated y:"<<y.substr(1,4)<<endl;
 
+    int number=0;
+    while (number<1||number>10){
+        cout<<"enter again";
+        cin>>number;
+    }
 
     
     
